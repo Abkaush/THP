@@ -1,0 +1,10 @@
+Steps :
+1)import the necessary libraries
+2)Use the predefined model of the Puma560 robot in the Robotics Toolbox.
+3)Specify the desired position and orientation for the robot's end-effector. The position is a 3D point, and the orientation is represented by the identity matrix (indicating no rotation)
+4)Create the Transformation Matrix .Combine the target position and orientation into a transformation matrix. The transformation matrix consists of both position (translation) and orientation (rotation).
+5)Compute the Inverse Kinematics.Set an initial guess for the joint angles, here initialized to zero.Use the ikine_LMS method to compute the joint angles that would place the end-effector at the specified position and orientation.
+6)Verify if the solution obtained is valid. This involves checking if the output is not None and if all joint angle values are finite (not NaN or infinity).
+
+
+
